@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element audit="true" extends="task" label="NeedIt Task" max_length="40" name="x_58872_needit_needit_task" type="collection">
+    <element audit="true" db_object_id="48374c6c2fba3110c728cc96f699b694" extends="task" label="NeedIt Task" max_length="40" name="x_58872_needit_needit_task" type="collection">
         <element label="NeedIt" max_length="32" name="u_needit" reference="x_58872_needit_needit" type="reference"/>
+        <element attributes="encode_utf8=false" label="Requested for" mandatory="true" max_length="32" name="u_requested_for" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="When needed" mandatory="true" max_length="40" name="u_when_needed" type="glide_date_time"/>
     </element>
 </database>
